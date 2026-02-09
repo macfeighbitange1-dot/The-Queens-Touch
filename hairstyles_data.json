@@ -1,0 +1,62 @@
+[
+{
+    "model": "services.hairstyle",
+    "pk": 1,
+    "fields": {
+        "title": "Twist out",
+        "price": 350,
+        "description": "",
+        "image": "hairstyles/download_4.jpg",
+        "created_at": "2026-02-09T18:44:56.327Z",
+        "updated_at": "2026-02-09T18:53:29.957Z"
+    }
+},
+{
+    "model": "services.hairstyle",
+    "pk": 2,
+    "fields": {
+        "title": "Knotless",
+        "price": 450,
+        "description": "",
+        "image": "hairstyles/re_you_looking_for_a_hairstyle_that_not_only.jpg",
+        "created_at": "2026-02-09T18:45:16.652Z",
+        "updated_at": "2026-02-09T18:54:36.867Z"
+    }
+},
+{
+    "model": "services.hairstyle",
+    "pk": 3,
+    "fields": {
+        "title": "Normal braids",
+        "price": 300,
+        "description": "",
+        "image": "hairstyles/knotlessbraids_hairextensions_protectivestyle.jpg",
+        "created_at": "2026-02-09T18:45:28.005Z",
+        "updated_at": "2026-02-09T18:58:31.478Z"
+    }
+},
+{
+    "model": "services.hairstyle",
+    "pk": 4,
+    "fields": {
+        "title": "Natural hair braids",
+        "price": 200,
+        "description": "",
+        "image": "hairstyles/Took_about_6_hours_Im_a_slow_braider_and_they.jpg",
+        "created_at": "2026-02-09T18:45:41.548Z",
+        "updated_at": "2026-02-09T18:59:57.556Z"
+    }
+},
+{
+    "model": "services.hairstyle",
+    "pk": 5,
+    "fields": {
+        "title": "Natural lines",
+        "price": 200,
+        "description": "",
+        "image": "hairstyles/592912053_1245627544252111_6449188638916884753_n.jpg",
+        "created_at": "2026-02-09T18:45:54.184Z",
+        "updated_at": "2026-02-09T19:03:06.571Z"
+    }
+}
+]
