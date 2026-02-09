@@ -1,0 +1,309 @@
+/* Queens Touch Services - Luxury Beauty & Hair Styling
+   Theme: Royal Purple, Gold, and White 
+*/
+
+/* Import Premium Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --royal-purple: #4B0082;
+    --luxury-gold: #D4AF37;
+    --clean-white: #FFFFFF;
+    --off-white: #FAF9F6;  /* Soft luxury paper white */
+    --dark-text: #2D2D2D;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --whatsapp-green: #25D366;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-text);
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
+/* --- NEW: Announcement Bar --- */
+.announcement-bar {
+    background-color: var(--luxury-gold);
+    color: var(--royal-purple);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Sticky Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--royal-purple);
+    padding: 15px 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--luxury-gold);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--luxury-gold);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-book-btn {
+    background-color: var(--luxury-gold);
+    color: var(--royal-purple);
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Header & Branding */
+header {
+    background-color: var(--royal-purple);
+    color: var(--clean-white);
+    padding: 4rem 1rem;
+    text-align: center;
+    border-bottom: 6px solid var(--luxury-gold);
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--royal-purple);
+    font-size: 2.5rem;
+    margin: 60px 0 40px;
+}
+
+/* Layout Container */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid System */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Service Cards */
+.service-card {
+    background: var(--clean-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(212, 175, 55, 0.1); 
+    position: relative;
+}
+
+.service-card img {
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    border: 1px solid var(--luxury-gold);
+    box-shadow: 0 15px 40px rgba(75, 0, 130, 0.15);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-info {
+    padding: 35px;
+    text-align: center;
+}
+
+.service-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--royal-purple);
+    font-size: 1.6rem;
+    margin: 0 0 10px 0;
+}
+
+.price-tag {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--luxury-gold);
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.book-btn {
+    background-color: var(--royal-purple);
+    color: var(--clean-white);
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid var(--royal-purple);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.2);
+}
+
+.book-btn:hover {
+    background-color: transparent;
+    color: var(--royal-purple);
+    cursor: pointer;
+}
+
+/* Queen's Gallery Styling */
+.gallery-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About & Hours Styling */
+.about-section {
+    padding: 100px 20px;
+    background-color: var(--clean-white);
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 8px solid var(--off-white);
+    box-shadow: var(--shadow);
+}
+
+/* --- NEW: Floating WhatsApp Button --- */
+.mobile-call-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--whatsapp-green);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-decoration: none;
+}
+
+/* --- SMARTPHONE COMPATIBILITY (Jumia/Alibaba Style) --- */
+@media (max-width: 768px) {
+    header { padding: 3rem 1rem; }
+    header h1 { font-size: 2rem; letter-spacing: 2px; }
+    
+    .section-title { font-size: 1.8rem; margin: 40px 0 20px; }
+
+    /* Stack cards in 1 column like Jumia */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Thumb-friendly buttons */
+    .book-btn {
+        width: 100%;
+        padding: 18px;
+    }
+
+    /* Gallery optimization */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .gallery-item { height: 180px; }
+
+    /* About Section stack */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Testimonials stack */
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-card { width: 100%; }
+}
